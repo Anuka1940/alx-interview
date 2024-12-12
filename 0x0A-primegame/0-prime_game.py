@@ -1,30 +1,15 @@
 #!/usr/bin/python3
-"""
-Determines the winner of each game and returns the overall winner.
-
-Parameters:
-    x (int): The number of rounds to play.
-    nums (list): A list of integers,
-    where each integer represents the value of n in a round.
-
-Returns:
-    str: The name of the player that won the most
-    rounds ("Maria" or "Ben"), or None if no winner.
-"""
+''' solving the 0-prime game'''
 
 
 def isWinner(x, nums):
-    """
-    Determines the winner of each game and returns the overall winner.
-    """
+    '''container function for iswinner'''
 
     if not nums or x < 1:
         return None
 
     def sieve_of_eratosthenes(n):
-         """
-         Generate a list of prime numbers up to n using the Sieve of Eratosthenes.
-        """
+         '''sieve_of_eratosthenes implementation'''
         is_prime = [True] * (n + 1)
         is_prime[0] = is_prime[1] = False
         for i in range(2, int(n**0.5) + 1):
