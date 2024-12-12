@@ -14,10 +14,17 @@ Returns:
 
 
 def isWinner(x, nums):
+    """
+    Determines the winner of each game and returns the overall winner.
+    """
+
     if not nums or x < 1:
         return None
 
     def sieve_of_eratosthenes(n):
+         """
+         Generate a list of prime numbers up to n using the Sieve of Eratosthenes.
+        """
         is_prime = [True] * (n + 1)
         is_prime[0] = is_prime[1] = False
         for i in range(2, int(n**0.5) + 1):
