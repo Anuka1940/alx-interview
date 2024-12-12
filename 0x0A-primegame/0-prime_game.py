@@ -1,17 +1,19 @@
 #!/usr/bin/python3
+"""
+Determines the winner of each game and returns the overall winner.
+
+Parameters:
+    x (int): The number of rounds to play.
+    nums (list): A list of integers,
+    where each integer represents the value of n in a round.
+
+Returns:
+    str: The name of the player that won the most
+    rounds ("Maria" or "Ben"), or None if no winner.
+"""
+
+
 def isWinner(x, nums):
-    """
-    Determines the winner of each game and returns the overall winner.
-
-    Parameters:
-        x (int): The number of rounds to play.
-        nums (list): A list of integers,
-        where each integer represents the value of n in a round.
-
-    Returns:
-        str: The name of the player that won the most
-        rounds ("Maria" or "Ben"), or None if no winner.
-    """
     if not nums or x < 1:
         return None
 
