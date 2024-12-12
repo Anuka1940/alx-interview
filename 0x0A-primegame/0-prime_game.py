@@ -9,7 +9,7 @@ def isWinner(x, nums):
         return None
 
     def sieve_of_eratosthenes(n):
-         '''sieve_of_eratosthenes implementation'''
+        '''sieve_of_eratosthenes implementation'''
         is_prime = [True] * (n + 1)
         is_prime[0] = is_prime[1] = False
         for i in range(2, int(n**0.5) + 1):
